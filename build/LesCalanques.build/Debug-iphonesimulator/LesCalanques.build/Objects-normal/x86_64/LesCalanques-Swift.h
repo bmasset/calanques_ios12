@@ -201,8 +201,23 @@ SWIFT_CLASS("_TtC12LesCalanques11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UIView;
+@class ImageRonde;
+@class UILabel;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12LesCalanques12CalanqueCell")
+@interface CalanqueCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
+@property (nonatomic, weak) IBOutlet ImageRonde * _Null_unspecified calanqueIV;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nomLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSBundle;
 
 SWIFT_CLASS("_TtC12LesCalanques19ControllerAvecCarte")
 @interface ControllerAvecCarte : UIViewController
@@ -219,8 +234,17 @@ SWIFT_CLASS("_TtC12LesCalanques19ControllerAvecTable")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+
+SWIFT_CLASS("_TtC12LesCalanques10ImageRonde")
+@interface ImageRonde : UIImageView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
+@end
+
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC12LesCalanques26TableViewIntegreController")
 @interface TableViewIntegreController : UITableViewController

@@ -1,10 +1,12 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "fd34b09492d3901192df51361b72ca85"
-build_time: [1560274114, 588553000]
+build_time: [1560330904, 471401000]
 inputs:
-  "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Controller/TableViewIntegreController.swift": [1560274114, 476096693]
+  "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Controller/TableViewIntegreController.swift": [1560330904, 376101375]
   "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/AppDelegate.swift": [1560163981, 5458735]
+  "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/CalanqueCell.swift": [1560329958, 76851363]
   "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Modele/CalanqueCollection.swift": [1532506306, 0]
   "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Controller/ControllerAvecCarte.swift": [1560181119, 861550384]
   "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Modele/Calanques.swift": [1560170741, 158080554]
+  "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/ImageRonde.swift": [1560329843, 24151920]
   "/Users/bmasset/Documents/Mes programmes/Cours Swift/Cours Ios/10 Calanques/LesCalanques/LesCalanques/Controller/ControllerAvecTable.swift": [1560181297, 971972528]

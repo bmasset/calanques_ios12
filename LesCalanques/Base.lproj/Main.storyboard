@@ -78,6 +78,60 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CalanqueCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalanqueCell" rowHeight="262" id="FMd-Rt-Hdd" customClass="CalanqueCell" customModule="LesCalanques" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="262"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FMd-Rt-Hdd" id="2bz-fD-nig">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="261.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRW-1c-cQF">
+                                            <rect key="frame" x="20" y="151" width="374" height="100"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vLZ-db-XN7" customClass="ImageRonde" customModule="LesCalanques" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="-12.5" width="125" height="125"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="fMR-zF-JfY"/>
+                                                        <constraint firstAttribute="height" constant="125" id="id4-eZ-bXl"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seh-eg-I66">
+                                                    <rect key="frame" x="141" y="8" width="225" height="84"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="seh-eg-I66" secondAttribute="trailing" constant="8" id="8AW-Qr-9nq"/>
+                                                <constraint firstAttribute="bottom" secondItem="seh-eg-I66" secondAttribute="bottom" constant="8" id="Ddp-5c-L7U"/>
+                                                <constraint firstItem="seh-eg-I66" firstAttribute="top" secondItem="RRW-1c-cQF" secondAttribute="top" constant="8" id="TYJ-bi-6kS"/>
+                                                <constraint firstItem="seh-eg-I66" firstAttribute="leading" secondItem="vLZ-db-XN7" secondAttribute="trailing" constant="8" id="Uvq-zl-9ej"/>
+                                                <constraint firstItem="vLZ-db-XN7" firstAttribute="centerY" secondItem="RRW-1c-cQF" secondAttribute="centerY" id="VNM-TG-Phg"/>
+                                                <constraint firstAttribute="height" constant="100" id="aAj-0Z-hoI"/>
+                                                <constraint firstItem="vLZ-db-XN7" firstAttribute="leading" secondItem="RRW-1c-cQF" secondAttribute="leading" constant="8" id="oRu-wC-d3L"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RRW-1c-cQF" secondAttribute="trailing" id="9Fk-NE-XnO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="RRW-1c-cQF" secondAttribute="bottom" id="RbV-Th-WA6"/>
+                                        <constraint firstItem="RRW-1c-cQF" firstAttribute="leading" secondItem="2bz-fD-nig" secondAttribute="leadingMargin" id="qKT-Ag-ITw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="calanqueIV" destination="vLZ-db-XN7" id="YLw-3g-5I7"/>
+                                    <outlet property="containerView" destination="RRW-1c-cQF" id="Eto-8i-wnS"/>
+                                    <outlet property="nomLabel" destination="seh-eg-I66" id="YVB-wY-uIh"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="fln-Hs-AbW" id="i4W-rH-xka"/>
@@ -88,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOE-rE-6ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="249"/>
+            <point key="canvasLocation" x="747.82608695652175" y="248.4375"/>
         </scene>
     </scenes>
     <resources>
