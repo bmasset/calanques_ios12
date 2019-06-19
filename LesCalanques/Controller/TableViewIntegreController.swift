@@ -16,6 +16,7 @@ class TableViewIntegreController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calanques = CalanqueCollection().all()
+        // ajout d'une image de fond
         tableView.backgroundColor = UIColor.clear
         let bg = UIImageView(frame: view.bounds)
         bg.image = calanques[0].image
@@ -48,7 +49,6 @@ class TableViewIntegreController: UITableViewController {
             let calanque = calanques[indexPath.row]
             cell.textLabel?.text = calanque.nom
             cell.imageView?.image = calanque.image
-        
             return cell
         }
     }

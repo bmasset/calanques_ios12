@@ -28,7 +28,7 @@ class CalanqueCell: UITableViewCell {
     }
 
     func setupCell(_ calanque:Calanque) {
-            self.calanque = calanque
+        self.calanque = calanque
         containerView.layer.cornerRadius = 20
         containerView.backgroundColor = UIColor.lightGray
         nomLabel.text = self.calanque.nom
